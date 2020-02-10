@@ -15,18 +15,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-cloudbuild
+  name: hello-cloudbuild-BRANCHNAME
   labels:
-    app: hello-cloudbuild
+    app: hello-cloudbuild-BRANCHNAME
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hello-cloudbuild
+      app: hello-cloudbuild-BRANCHNAME
   template:
     metadata:
       labels:
-        app: hello-cloudbuild
+        app: hello-cloudbuild-BRANCHNAME
     spec:
       containers:
       - name: hello-cloudbuild
@@ -40,9 +40,9 @@ metadata:
   name: hello-cloudbuild
 spec:
   selector:
-    app: hello-cloudbuild
+    app: hello-cloudbuild-BRANCHNAME
   ports:
   - protocol: TCP
-    port: 80
+    port: PORT
     targetPort: 8080
   type: LoadBalancer

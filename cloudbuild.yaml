@@ -62,7 +62,10 @@ steps:
   args:
   - '-c'
   - |
+     PORTNUM=$(( ( RANDOM % 100 )  + 8000 )) && \
      sed "s/GOOGLE_CLOUD_PROJECT/${PROJECT_ID}/g" kubernetes.yaml.tpl | \
+     sed "s/BRANCH_NAME/${BRANCH_NAME}/g" kubernetes.yaml.tpl | \
+     sed "s/PORT/${PORTNUM}/g" kubernetes.yaml.tpl | \
      sed "s/COMMIT_SHA/${SHORT_SHA}/g" > hello-cloudbuild-env/kubernetes.yaml
 
 # This step pushes the manifest back to hello-cloudbuild-env
