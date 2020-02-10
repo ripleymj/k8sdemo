@@ -43,6 +43,6 @@ spec:
     app: hello-cloudbuild-BRANCHNAME
   ports:
   - protocol: TCP
-    port: PORT
+    port: 80
     targetPort: 8080
   type: LoadBalancer
