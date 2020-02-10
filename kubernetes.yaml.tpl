@@ -37,7 +37,7 @@ spec:
 kind: Service
 apiVersion: v1
 metadata:
-  name: hello-cloudbuild
+  name: hello-cloudbuild-BRANCHNAME
 spec:
   selector:
     app: hello-cloudbuild-BRANCHNAME
