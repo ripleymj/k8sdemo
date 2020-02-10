@@ -51,6 +51,7 @@ steps:
   - |
     gcloud source repos clone hello-cloudbuild-env && \
     cd hello-cloudbuild-env && \
+    git checkout candidate && \
     git checkout $BRANCH_NAME || git checkout -b $BRANCH_NAME && \
     git config user.email $(gcloud auth list --filter=status:ACTIVE --format='value(account)')
 
