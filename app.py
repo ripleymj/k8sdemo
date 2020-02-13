@@ -3,7 +3,8 @@ app = Flask('hello-cloudbuild')
 
 @app.route('/')
 def hello():
-    print('''According to all known laws
+    print("""
+According to all known laws
 of aviation,
 
   
@@ -4564,7 +4565,8 @@ All right. Take ten, everybody.
 Wrap it up, guys.
 
   
-I had virtually no rehearsal for that.''')
+I had virtually no rehearsal for that.
+""")
 
 
 if __name__ == '__main__':
