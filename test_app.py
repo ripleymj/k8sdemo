@@ -18,7 +18,7 @@ from app import hello
 class TestHelloApp(unittest.TestCase):
 
   def test_hello(self):
-    return true
+    return True
 
 if __name__ == '__main__':
   unittest.main()
