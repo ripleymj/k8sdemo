@@ -10,8 +10,7 @@ def hello():
     data = r.text
     soup = BeautifulSoup(data)
 
-    print(soup)
-  return "Goodbye World!\n"
+  return soup 
 
 if __name__ == '__main__':
   app.run(host = '0.0.0.0', port = 8080)
