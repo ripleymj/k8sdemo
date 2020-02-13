@@ -19,7 +19,7 @@ metadata:
   labels:
     app: hello-cloudbuild-BRANCHNAME
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       app: hello-cloudbuild-BRANCHNAME
