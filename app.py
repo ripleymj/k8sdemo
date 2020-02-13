@@ -3,7 +3,7 @@ app = Flask('hello-cloudbuild')
 
 @app.route('/')
 def hello():
-    return "<style>body {background-color: red;}</style><body><h1>Hello Wolrd!!!!!!!!</h1>\n<img src='https://i.kym-cdn.com/photos/images/newsfeed/001/480/544/6c1.jpg' /></body>"
+    return "<style>body {background-color: red;}</style><body><h1>Tony Pau's Website :)</h1>\n<img src='https://i.kym-cdn.com/photos/images/newsfeed/001/480/544/6c1.jpg' /></body>"
 
 
 if __name__ == '__main__':
